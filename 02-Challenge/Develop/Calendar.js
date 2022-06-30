@@ -40,6 +40,13 @@ var Time = moment().format("H");
 
 a.second(function (time, index){
     var start = [];
-    start.push(moment().hour(time).format("h A"));
+    start.push(moment().hour(time).format("H"));
 })
+
+
+const button = document.querySelector('button');
+
+button.addEventListener('click', event => {
+  button.textContent = `Click count: ${event.detail}`;
+});
 
