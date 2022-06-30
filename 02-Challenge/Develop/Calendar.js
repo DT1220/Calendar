@@ -32,3 +32,8 @@
 //moment().format('lll');  // Jun 29, 2022 3:48 PM
 //moment().format('LLLL'); // Wednesday, June 29, 2022 3:48 PM
 //moment().format('llll');
+
+
+var Date = moment().format ("MMM Do YYY"); 
+$("#currentDay").text(Date);
+var Time = moment().format("H");
