@@ -33,20 +33,33 @@
 //moment().format('LLLL'); // Wednesday, June 29, 2022 3:48 PM
 //moment().format('llll');
 
-//setting up format of date and time
+$(document).ready(function() { //loads html then css 
+    //setting up format of date and time
 var currentDate = moment().format ("MMM Do YYYY"); 
 $("#currentDay").text(currentDate);
-var Time = moment().format("H");
-
-a.second(function (time, index){
-    var start = [];
-    start.push(moment().hour(time).format("H"));
+$(".save").on("click", function(){
+    console.log();
+    localStorage.setItem(Time, text);
 })
+//saves data from local storage for the corresponding hour
+$("#hour9 .description").Val(localStorage.getItem("hour9"));
+//function to track hours
+function hours(){
+    var Hours = moment().hour();
+}
 
 
+
+//creating button click event
 const button = document.querySelector('button');
+localStorage.setItem(Input, Val);
 
 button.addEventListener('click', event => {
   button.textContent = `Click count: ${event.detail}`;
+
+
 });
+
+})
+
 
