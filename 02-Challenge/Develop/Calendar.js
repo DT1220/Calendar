@@ -33,7 +33,13 @@
 //moment().format('LLLL'); // Wednesday, June 29, 2022 3:48 PM
 //moment().format('llll');
 
-
-var Date = moment().format ("MMM Do YYY"); 
-$("#currentDay").text(Date);
+//setting up format of date and time
+var currentDate = moment().format ("MMM Do YYYY"); 
+$("#currentDay").text(currentDate);
 var Time = moment().format("H");
+
+a.second(function (time, index){
+    var start = [];
+    start.push(moment().hour(time).format("h A"));
+})
+
